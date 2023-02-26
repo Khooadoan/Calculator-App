@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Khoadoan.page Calculator</title>
+       <link rel="stylesheet" href="style.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Mulish&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="navbar">
+        <p id="logo">Khoadoan.page <strong>Calculator</strong></p>
+        </div>
+        <div id="body">
+        <div id="calccontainer">
+            <div id="digitarea">0</div>
+            <div id="oprcontainer">
+                <button class="oprbutton" id="add" onclick="add()">+</button>
+                <button class="oprbutton" id="subtract" onclick="subtract()">-</button>
+                <button class="oprbutton" id="multiply" onclick="multiply()">×</button>
+                <button class="oprbutton" id="division" onclick="division()">÷</button>
+            </div>
+            <div id="buttoncontainer">
+               <button class="button" onclick="num = 7; numKey();">7</button>
+               <button class="button" onclick="num = 8; numKey();">8</button>
+               <button class="button" onclick="num = 9; numKey();">9</button>
+               <button class="button" onclick="num = 4; numKey();">4</button>
+               <button class="button" onclick="num = 5; numKey();">5</button>
+               <button class="button" onclick="num = 6; numKey();">6</button>
+               <button class="button" onclick="num = 1; numKey();">1</button>
+               <button class="button" onclick="num = 2; numKey();">2</button>
+               <button class="button" onclick="num = 3; numKey();">3</button>
+               <button class="button" id="num0" onclick="num = 0; numKey();">0</button>
+               <button class="button" onclick="decimalKey()">.</button>
+               <button class="button" onclick="clearKey()" id="clearkey">AC</button>
+               <button class="resultbtn">=</button>
+            </div>
+            
+        </div>
+      </div>
+        <script src="main.js"></script>
+    </body>
+</html>

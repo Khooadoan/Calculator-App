@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 0.7rem;
+    font-size: 2rem;
+}
+
+#logo strong {
+    color: orange;
+}
+
+#body {
+    display: flex;
+    justify-content: center;
+}
+
+#calccontainer {
+    margin-top: 12.5%;
+    width: 23rem;
+    height: 30rem;
+}
+
+#digitarea {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    height: 4.5rem;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0 2%;
+    border-radius: 0.8rem 0.8rem 0 0;
+}
+
+.resultbtn {
+   grid-column: 4 / 4;
+   grid-row: 1 / 5;
+   background: rgb(255, 157, 0);
+    justify-content: center;
+    display: flex;
+    border: 0.005rem solid rgb(171, 171, 171);
+    align-items: center;
+    border-radius: 0 0 0.8rem 0;
+}
+
+.resultbtn:active {
+    background: rgb(233, 144, 0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#oprcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.oprbutton {
+    background: rgb(208, 208, 208);
+    justify-content: center;
+    display: flex;
+    border: 0.005rem solid rgb(171, 171, 171);
+    height: 2.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.oprbuttontoggled {
+    background: rgb(179, 179, 179);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    justify-content: center;
+    display: flex;
+    border: 0.005rem solid rgb(171, 171, 171);
+    height: 2.5rem;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.oprbutton:active {
+    background: rgb(179, 179, 179);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#buttoncontainer {
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+}
+
+
+.button {
+    background: rgb(240, 240, 240);
+    justify-content: center;
+    display: flex;
+    border: 0.005rem solid rgb(171, 171, 171);
+    height: 3.5rem;
+    align-items: center;
+    grid-template-columns: auto auto auto auto;
+}
+
+.button:active {
+    background: rgb(189, 189, 189);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+#num0 {
+    border-radius: 0 0 0 0.8rem;
+}
+
+button {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.8rem;
+}
