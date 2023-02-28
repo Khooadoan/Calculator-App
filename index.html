@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+       <meta charset="utf-8">
        <title>Khoadoan.page Calculator</title>
        <link rel="stylesheet" href="style.css">
        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Mulish&display=swap" rel="stylesheet"> 
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Mulish&display=swap" rel="stylesheet"> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="navbar">
@@ -33,7 +35,7 @@
                <button class="button" id="num0" onclick="num = 0; numKey();">0</button>
                <button class="button" onclick="decimalKey()">.</button>
                <button class="button" onclick="clearKey()" id="clearkey">AC</button>
-               <button class="resultbtn">=</button>
+               <button class="resultbtn" onclick="result()">=</button>
             </div>
             
         </div>
